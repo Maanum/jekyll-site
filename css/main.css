@@ -1,0 +1,313 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+/* ol, ul {
+	list-style: none;
+} */
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Custom common settings
+*/
+
+:root {
+  --main-bg-color: #0c4671;
+  --text-white-color: #fff;
+  --text-dark-color: #292929;
+  --text-dark-lighter-color: #686868;
+}
+
+html {
+  box-sizing: border-box;
+  background: var(--main-bg-color);
+  font-family: "Lato", Helvetica, sans-serif;
+  color: var(--text-white-color);
+  /* padding: 2em; */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* > :first-child {
+  margin-top: 0 !important;
+}
+
+body {
+  max-width: 80rem;
+  margin: 0 auto 0 auto;
+  padding: 2em;
+}
+
+img {
+  display: block;
+}
+
+#bio a {
+  color: var(--text-white-color);
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 00 0 0.5em 0;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0.5em 0 0.4em 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 0.8em 0 0.35em 0;
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin: 0.4em 0 0.35em 0;
+}
+
+h5 {
+  font-size: 0.83rem;
+}
+h6 {
+  font-size: 0.75rem;
+}
+
+p {
+  margin: 0.3em 0 0.3em 0;
+  line-height: 1.1rem;
+}
+
+ul {
+  padding-left: 2em;
+  line-height: 1.3rem;
+}
+
+.main {
+  min-width: 20em;
+}
+
+.light-field {
+  color: var(--text-dark-color);
+  background: #fff;
+  padding: 1em;
+  margin: 0 0 1.5em;
+  border-radius: 0.25em;
+  break-inside: avoid;
+}
+
+.project-meta-header {
+  margin: 1rem 0 0.1rem 0;
+}
+
+.card-item {
+  margin: 0.25em 0 0.25em 0;
+}
+.card-desc {
+  color: var(--text-dark-lighter-color);
+  font-style: italic;
+}
+.card-roles {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.role-label {
+  border-radius: 0.8em;
+  background: lightgray;
+  font-size: 0.7rem;
+  color: var(--text-dark-lighter-color);
+  padding: 0.5em 0.7em 0.5em 0.7em;
+  margin: 0.2em 0.5em 0.2em 0em;
+}
+
+.label-pm {
+  background: #80b3ff;
+}
+.label-pd {
+  background: #ff8080;
+}
+.label-dev {
+  background: #66cc00;
+}
+
+.card-logos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tool-icon {
+  height: 2.5em;
+  width: 2.5em;
+  margin: 0.2em 0.4em 0em 0em;
+  border-radius: 50%;
+}
+
+.metadata-section + .metadata-section {
+  margin-top: 1em;
+}
+
+#bio {
+  text-align: justify;
+}
+
+#projects-list {
+  column-gap: 1.5em;
+}
+
+#projects-list a {
+  text-decoration: none;
+}
+
+.home-button {
+  display: inline-block;
+  padding: 0.5em;
+  border-radius: 0.4em;
+  background: #198ee6;
+  color: var(--main-bg-color);
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2em;
+}
+
+@media only screen and (min-width: 65rem) {
+  .main {
+    display: flex;
+  }
+
+  .left-column {
+    margin: 0 3em 0 0;
+    flex: 1 0 0;
+  }
+  .right-column {
+    flex: 3 0px;
+  }
+
+  #projects-list {
+    column-count: 2;
+  }
+}
