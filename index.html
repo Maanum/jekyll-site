@@ -57,8 +57,10 @@
       <div class="right-column">
         <h2>Projects</h2>
         <div id="projects-list">
-          {% for item in site.data.projects %} {% include projectCard.html
-          project=item %} {% endfor %}
+          {% for item in site.data.projects %} {% assign key = item[0] %}{%
+          assign value = item[1] %} {% include projectCard.html slug=key
+          project=value %} {% endfor %}
+        </div>
       </div>
     </div>
 

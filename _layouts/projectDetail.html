@@ -1,23 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="">
   <head>
-    <!-- <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa"> -->
     <link rel="stylesheet" href="css/main.css" />
     <link
       href="http://fonts.googleapis.com/css?family=Lato:400,700"
@@ -25,12 +8,11 @@
       type="text/css"
     />
   </head>
-
   <body>
     <a href="index.html">
       <div class="home-button">◄ home</div>
     </a>
-    <h1>{{ page.title }}</h1>
+    <h1>{{ site.data.projects[page.slug].title }}</h1>
     <div class="main">
       <div class="left-column">
         <h2>Metadata</h2>
@@ -38,44 +20,33 @@
           <div class="metadata-section">
             <h4>Summary</h4>
             <div class="card-desc">
-              {{ page.summary }}
+              {{ site.data.projects[page.slug].summary }}
             </div>
           </div>
           <div class="metadata-section">
-            <h4>URL</h4>
-            <a target="_blank" href="{{ page.projectUrl }}">
-              {{ page.projectUrl }}
-            </a>
+            <h4>Links</h4>
+            <ul class="links-list">
+              {% for item in site.data.projects[page.slug].links %}
+              <li>
+                <a target="_blank" href="{{ item.url }}">
+                  {{ item.description }}
+                </a>
+              </li>
+              {% endfor %}
+            </ul>
           </div>
           <div class="metadata-section">
             <h4 class="project-meta-header">Roles</h4>
             <div class="card-roles">
-              <pre class="role-label label-pm">Product Manager</pre>
-              <pre class="role-label label-pd">Designer</pre>
-              <pre class="role-label label-dev">Developer</pre>
+              {% for item in site.data.projects[page.slug].roles %} {%- include
+              roleLabel.html role=item -%} {% endfor %}
             </div>
           </div>
           <div class="metadata-section">
             <h4 class="project-meta-header">Tools Used</h4>
             <div class="card-logos">
-              <img
-                class="tool-icon"
-                src="images/icon-react.png"
-                alt="React Icon"
-                title="React"
-              />
-              <img
-                class="tool-icon"
-                src="images/icon-firebase_hosting.svg"
-                alt="Firebase Hosting Icon"
-                title="Firebase Hosting"
-              />
-              <img
-                class="tool-icon"
-                src="images/icon-firebase_functions.svg"
-                alt="Cloud Functions for Firebase Icon"
-                title="Cloud Functions for Firebase"
-              />
+              {% for item in site.data.projects[page.slug].tools %} {%- include
+              toolIcon.html tool=item -%} {% endfor %}
             </div>
           </div>
         </div>

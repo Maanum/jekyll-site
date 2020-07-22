@@ -1,4 +1,5 @@
-- title: Credit Card Selector
+mileage:
+  title: Credit Card Selector
   roles:
     - Product Manager
     - Designer
@@ -8,9 +9,13 @@
     - firebase_hosting
     - firebase_functions
   summary: >-
-    Application that indicates which credit card should be used for specific purchases
+    Application that indicates which credit card should be used for specific purchases 
     to optimize reward points.
-- title: Personal Site
+  links:
+    - description: Website
+      url: https://mileage-fe35a.web.app
+site:
+  title: Personal Site
   roles:
     - Designer
     - Developer
@@ -19,9 +24,18 @@
     - html5
     - css3
     - github_pages
+    - jekyll
   summary: >-
     Development of this page to try out HTML/CSS-only website development and to have something to enter on the "website" field of job applications.
-- title: DataSeer
+  links:
+    - description: Website
+      url: https://kristofer.site
+    - description: GitHub Pages Repo
+      url: https://github.com/Maanum/maanum.github.io
+    - description: Build Repo
+      url: https://github.com/Maanum/jekyll-site
+dataseer:
+  title: DataSeer
   roles:
     - Product Manager
   tools:
@@ -31,7 +45,16 @@
     - hotjar
   summary: >-
     A B2B SaaS application that extracts semantic information from technical diagrams (especially P&IDs).
-- title: Whitten Associates Website
+  links:
+    - description: Product Page
+      url: https://www.arundo.com/products/dataseer
+    - description: Documentation
+      url: https://docs.dataseer.arundo.com/
+    - description: Related Blogpost
+      url: https://www.arundo.com/thejourney/bridging-the-digital-divide-legacy-documents-in-a-digital-world
+whitten:
+  title: Whitten Associates Website
+  slug:
   roles:
     - Designer
     - Developer

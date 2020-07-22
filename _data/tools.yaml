@@ -37,3 +37,6 @@ gatsby:
 sanity:
   name: Sanity
   icon: icon-sanityio.png
+jekyll:
+  name: Jekyll
+  icon: icon-jekyll.png
