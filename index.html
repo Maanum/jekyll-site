@@ -1,3 +1,7 @@
+---
+# Empty
+---
+
 <!DOCTYPE html>
 <html class="no-js" lang="">
   <head>
@@ -50,156 +54,11 @@
           <li>Business Viability Risk</li>
         </ul>
       </div>
-
       <div class="right-column">
         <h2>Projects</h2>
         <div id="projects-list">
-          <a href="project-card.html">
-            <div class="project-card light-field">
-              <h3 class="card-name card-item">Credit Card Selector</h3>
-              <div class="card-desc card-item">
-                Application that indicates which credit card should be used for
-                specific purchases to optimize reward points.
-              </div>
-              <div class="card-roles card-item">
-                <pre class="role-label label-pm">Product Manager</pre>
-                <pre class="role-label label-pd">Designer</pre>
-                <pre class="role-label label-dev">Developer</pre>
-              </div>
-              <div class="card-logos card-item">
-                <img
-                  class="tool-icon"
-                  src="images/icon-react.png"
-                  alt="React Icon"
-                  title="React"
-                />
-                <img
-                  class="tool-icon"
-                  src="images/icon-firebase_hosting.svg"
-                  alt="Firebase Hosting Icon"
-                  title="Firebase Hosting"
-                />
-                <img
-                  class="tool-icon"
-                  src="images/icon-firebase_functions.svg"
-                  alt="Cloud Functions for Firebase Icon"
-                  title="Cloud Functions for Firebase"
-                />
-              </div>
-            </div>
-          </a>
-          <div class="project-card light-field">
-            <h3 class="card-name card-item">DataSeer</h3>
-            <div class="card-desc card-item">
-              A B2B SaaS application that extracts semantic information from
-              technical diagrams (especially P&IDs).
-            </div>
-            <div class="card-roles card-item">
-              <pre class="role-label label-pm">Product Manager</pre>
-            </div>
-            <div class="card-logos card-item">
-              <img
-                class="tool-icon"
-                src="images/icon-jira.svg"
-                alt="Jira Icon"
-                title="Jira"
-              />
-              <img
-                class="tool-icon"
-                src="images/icon-confluence.svg"
-                alt="Confluence Icon"
-                title="Confluence"
-              />
-              <img
-                class="tool-icon"
-                src="images/icon-productplan.webp"
-                alt="Productplan Icon"
-                title="Productplan"
-              />
-              <img
-                class="tool-icon"
-                src="images/icon-hotjar.png"
-                alt="Hotjar Icon"
-                title="Hotjar"
-              />
-            </div>
-          </div>
-          <div class="project-card light-field">
-            <h3 class="card-name card-item">Whitten Associates Website</h3>
-            <div class="card-desc card-item">
-              Creation of a website for architectural firm Whitten Associates to
-              improve lead gen conversion.
-            </div>
-            <div class="card-roles card-item">
-              <pre class="role-label label-pd">Designer</pre>
-              <pre class="role-label label-dev">Developer</pre>
-            </div>
-            <div class="card-logos card-item">
-              <img
-                class="tool-icon"
-                src="images/icon-figma.png"
-                alt="Figma Icon"
-                title="Figma"
-              />
-              <img
-                class="tool-icon"
-                src="images/icon-react.png"
-                alt="React Icon"
-                title="React"
-              />
-              <img
-                class="tool-icon"
-                src="images/icon-sanityio.png"
-                alt="Sanity.io Icon"
-                title="Sanity.io"
-              />
-              <img
-                class="tool-icon"
-                src="images/icon-gatsby.svg"
-                alt="Gatsby Icon"
-                title="Gatsby"
-              />
-            </div>
-          </div>
-          <div class="project-card light-field">
-            <h3 class="card-name card-item">Personal Website</h3>
-            <div class="card-desc card-item">
-              Development of this page to try out HTML/CSS-only website
-              development and to have something to enter on the "website" field
-              of job applications.
-            </div>
-            <div class="card-roles card-item">
-              <pre class="role-label label-pd">Designer</pre>
-              <pre class="role-label label-dev">Developer</pre>
-            </div>
-            <div class="card-logos card-item">
-              <img
-                class="tool-icon"
-                src="images/icon-figma.png"
-                alt="Figma Icon"
-                title="Figma"
-              />
-              <img
-                class="tool-icon"
-                src="images/icon-html5.png"
-                alt="HTML5 Icon"
-                title="HTML5"
-              />
-              <img
-                class="tool-icon"
-                src="images/icon-css3.png"
-                alt="CSS3 Icon"
-                title="CSS3"
-              />
-              <img
-                class="tool-icon"
-                src="images/icon-github.png"
-                alt="GitHub Icon"
-                title="GitHub Pages"
-              />
-            </div>
-          </div>
-        </div>
+          {% for item in site.data.projects %} {% include projectCard.html
+          project=item %} {% endfor %}
       </div>
     </div>
 

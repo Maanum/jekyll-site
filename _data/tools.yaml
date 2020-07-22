@@ -1,0 +1,39 @@
+figma:
+  name: Figma
+  icon: icon-figma.png
+firebase_hosting:
+  name: Firebase Hosting
+  icon: icon-firebase_hosting.svg
+firebase_functions:
+  name: Cloud Functions for Firebase
+  icon: icon-firebase_functions.svg
+html5:
+  name: HTML5
+  icon: icon-html5.png
+css3:
+  name: CSS3
+  icon: icon-css3.png
+github_pages:
+  name: Github Pages
+  icon: icon-github.png
+jira:
+  name: Jira
+  icon: icon-jira.svg
+confluence:
+  name: Confluence
+  icon: icon-confluence.svg
+productplan:
+  name: ProductPlan
+  icon: icon-productplan.webp
+hotjar:
+  name: Hotjar
+  icon: icon-hotjar.png
+react:
+  name: React
+  icon: icon-react.png
+gatsby:
+  name: Gatsby
+  icon: icon-gatsby.svg
+sanity:
+  name: Sanity
+  icon: icon-sanityio.png

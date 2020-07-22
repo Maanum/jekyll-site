@@ -1,0 +1,44 @@
+- title: Credit Card Selector
+  roles:
+    - Product Manager
+    - Designer
+    - Developer
+  tools:
+    - figma
+    - firebase_hosting
+    - firebase_functions
+  summary: >-
+    Application that indicates which credit card should be used for specific purchases
+    to optimize reward points.
+- title: Personal Site
+  roles:
+    - Designer
+    - Developer
+  tools:
+    - figma
+    - html5
+    - css3
+    - github_pages
+  summary: >-
+    Development of this page to try out HTML/CSS-only website development and to have something to enter on the "website" field of job applications.
+- title: DataSeer
+  roles:
+    - Product Manager
+  tools:
+    - jira
+    - confluence
+    - productplan
+    - hotjar
+  summary: >-
+    A B2B SaaS application that extracts semantic information from technical diagrams (especially P&IDs).
+- title: Whitten Associates Website
+  roles:
+    - Designer
+    - Developer
+  tools:
+    - figma
+    - react
+    - gatsby
+    - sanity
+  summary: >-
+    Creation of a website for architectural firm Whitten Associates to improve lead gen conversion.

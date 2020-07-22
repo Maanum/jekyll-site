@@ -1,0 +1,6 @@
+<pre class="role-label
+  {%- case include.role -%}
+    {% when "Product Manager" %} label-pm">{{ include.role }}</pre>
+    {% when "Developer" %} label-dev">{{ include.role }}</pre>
+    {% when "Designer" %} label-pd">{{ include.role }}</pre>
+  {%- endcase -%}
