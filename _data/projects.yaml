@@ -54,7 +54,6 @@ dataseer:
       url: https://www.arundo.com/thejourney/bridging-the-digital-divide-legacy-documents-in-a-digital-world
 whitten:
   title: Whitten Associates Website
-  slug:
   roles:
     - Designer
     - Developer
@@ -65,3 +64,20 @@ whitten:
     - sanity
   summary: >-
     Creation of a website for architectural firm Whitten Associates to improve lead gen conversion.
+arundoplatform:
+  title: Arundo Platform
+  roles:
+    - Project Manager
+    - Product Manager
+    - Developer
+  tools:
+    - azure
+    - node
+    - python
+    - jira
+    - docker
+  summary: >-
+    A set of services and tools that enable asset-heavy industry to analyze IoT data streaming in from the edge.
+  links:
+    - description: Veracity Marketplace Page
+      url: https://store.veracity.com/arundo-analytics

@@ -40,3 +40,15 @@ sanity:
 jekyll:
   name: Jekyll
   icon: icon-jekyll.png
+python:
+  name: Python
+  icon: icon-python.png
+docker:
+  name: Docker
+  icon: icon-docker3.png
+azure:
+  name: Azure
+  icon: icon-azure.png
+node:
+  name: Node.js
+  icon: icon-node.png

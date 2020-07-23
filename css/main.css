@@ -240,19 +240,22 @@ ul {
   border-radius: 0.8em;
   background: lightgray;
   font-size: 0.7rem;
-  color: var(--text-dark-lighter-color);
+  color: var(--text-white-color);
   padding: 0.5em 0.7em 0.5em 0.7em;
   margin: 0.2em 0.5em 0.2em 0em;
 }
 
 .label-pm {
-  background: #80b3ff;
+  background: #44806c;
 }
 .label-pd {
-  background: #ff8080;
+  background: #b36446;
 }
 .label-dev {
-  background: #66cc00;
+  background: #586580;
+}
+.label-project {
+  background: #995c81;
 }
 
 .card-logos {
