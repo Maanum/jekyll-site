@@ -37,7 +37,7 @@ s,
 samp,
 small,
 strike,
-strong,
+/* strong, */
 sub,
 sup,
 tt,
@@ -135,6 +135,7 @@ table {
   --text-white-color: #fff;
   --text-dark-color: #292929;
   --text-dark-lighter-color: #686868;
+  --secondary-color: #198ee6;
 }
 
 html {
@@ -182,7 +183,7 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
-  margin: 0.8em 0 0.35em 0;
+  margin: 1em 0 0.35em 0;
 }
 
 h4 {
@@ -235,6 +236,11 @@ ul {
   display: flex;
   flex-wrap: wrap;
 }
+
+/* .project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 500px 5em var(--secondary-color);
+} */
 
 .role-label {
   border-radius: 0.8em;
@@ -296,6 +302,22 @@ ul {
   text-align: center;
   font-weight: bold;
   margin-bottom: 2em;
+}
+
+.project-description p {
+  margin: 1em 0 1em 0;
+}
+.project-description ol {
+  margin-left: 2em;
+}
+.language-plaintext {
+  font-family: monospace;
+}
+.project-description .highlight {
+  background: #dbdbdb;
+}
+.project-description .highlighter-rouge {
+  background: #dbdbdb;
 }
 
 .links-list {
