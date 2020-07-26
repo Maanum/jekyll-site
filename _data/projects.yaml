@@ -79,5 +79,7 @@ arundoplatform:
   summary: >-
     A set of services and tools that enable asset-heavy industry to analyze IoT data streaming in from the edge.
   links:
+    - description: Arundo Homepage
+      url: https://www.arundo.com/
     - description: Veracity Marketplace Page
       url: https://store.veracity.com/arundo-analytics
