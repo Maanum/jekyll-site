@@ -83,3 +83,48 @@ arundoplatform:
       url: https://www.arundo.com/
     - description: Veracity Marketplace Page
       url: https://store.veracity.com/arundo-analytics
+pipebot:
+  title: CruxOCM pipeBOT
+  roles:
+    - Project Manager
+    - Product Manager
+  tools:
+    - jira
+    - confluence
+    - productboard
+  summary: >-
+    CruxOCM works with the human in the control room, finding efficiency and safety through automation that will revolutionize heavy industry control room operations.
+  links:
+    - description: CruxOCM Homepage
+      url: https://www.cruxocm.com/
+    - description: pipeBOT
+      url: https://www.cruxocm.com/pipebot
+strongdm:
+  title: StrongDM
+  roles:
+    - Product Manager
+  tools:
+    - jira
+    - confluence
+    - productboard
+  summary: >-
+    A single platform to request, grant, approve, and revoke access securely with an audit trail every step of the way.
+  links:
+    - description: StrongDM Homepage
+      url: https://www.strongdm.com/
+adventofcode:
+  title: Advent of Code
+  roles:
+    - Developer
+  tools:
+    - elixir
+    - node
+  summary: >-
+    Advent of Code is an Advent calendar of small programming puzzles created by Eric Wastl.
+  links:
+    - description: Advent of Code Homepage
+      url: https://adventofcode.com/
+    - description: 2021 Solution Repo
+      url: https://github.com/Maanum/advent_of_code-2021
+    - description: 2019 Solution Repo
+      url: https://github.com/Maanum/AdventOfCode-2019

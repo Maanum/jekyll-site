@@ -52,3 +52,9 @@ azure:
 node:
   name: Node.js
   icon: icon-node.png
+productboard:
+  name: Productboard
+  icon: icon-productboard.svg
+elixir:
+  name: Elixir
+  icon: icon-elixir.svg
