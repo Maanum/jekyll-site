@@ -62,6 +62,7 @@ whitten:
     - react
     - gatsby
     - sanity
+    - netlify
   summary: >-
     Creation of a website for architectural firm Whitten Associates to improve lead gen conversion.
 arundoplatform:

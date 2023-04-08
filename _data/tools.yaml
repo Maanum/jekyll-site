@@ -58,3 +58,6 @@ productboard:
 elixir:
   name: Elixir
   icon: icon-elixir.svg
+netlify:
+  name: Netlify
+  icon: icon-netlify.png
